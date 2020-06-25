@@ -25,8 +25,8 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-- stage: 'Model_CI'
-  displayName: 'Model CI'
+- stage: 'Model_Code_CI'
+  displayName: 'Model Code CI'
   condition: not(variables['MODEL_BUILD_ID'])
   jobs:
   - job: "Model_CI_Pipeline"
